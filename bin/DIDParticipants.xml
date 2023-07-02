@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean class="com.bean.Participants" id="p1">
+   <property name="name" value="Shakti"></property>
+   <property name="address" value="mumbai"></property>
+   </bean>
+   
+   <bean class="com.bean.Participants" id="p2">
+   <property name="name" value="Salman"></property>
+   <property name="address" value="Delhi"></property>
+   </bean>
+   
+   <bean class="com.bean.Participants" id="p3">
+   <property name="name" value="Dharmesh"></property>
+   <property name="address" value="Gujrat"></property>
+   </bean>
+   
+   <bean class="com.bean.Participants" id="p4">
+   <property name="name" value="Punit"></property>
+   <property name="address" value="Nagpur"></property>
+   </bean>
+   
+   <bean class="com.bean.DID" id="did">
+   <property name="seasonName" value="season2"></property>
+   <property name="brandpartner">
+   <list>
+       <value>Byjus</value>  
+       <value>Bournvita</value>
+       <value>TVS</value>  
+       <value>Vivo</value>
+   </list> 
+   </property>
+   
+   <property name="participants">
+   <map>
+      <entry key-ref="p1" value="TeamRemo"></entry>
+      <entry key-ref="p2" value="TeamGeeta"></entry>
+      <entry key-ref="p3" value="TeamTerrance"></entry>
+      <entry key-ref="p4" value="TeamRemo"></entry>
+      </map>
+      </property>
+      </bean>
+      </beans>
